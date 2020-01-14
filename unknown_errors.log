@@ -1,0 +1,20 @@
+Mon, 13 Jan 2020 20:01:28 GMT POST /users 500 
+	request:
+		headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.21.0","accept":"*/*","cache-control":"no-cache","postman-token":"de3e6cc6-9075-4436-8f2f-369f6b871e1c","host":"localhost:3000","accept-encoding":"gzip, deflate","content-length":"81","connection":"keep-alive"}
+		user: -
+		body: {"username":"crameB","displayName":"CDog","password":"testing1"}
+	response:
+		status: 500
+		error message: relation "users" does not exist
+		error stack: SequelizeDatabaseError: relation "users" does not exist
+    at Query.formatError (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\sequelize\lib\dialects\postgres\query.js:363:16)
+    at C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\sequelize\lib\dialects\postgres\query.js:86:18
+    at tryCatcher (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\crame\Documents\kenzie\kwitter-api\node_modules\bluebird\js\release\async.js:17:14)
+    at processImmediate (internal/timers.js:439:21)
